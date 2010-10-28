@@ -29,7 +29,7 @@ ARGV.each do |arg|
       show_usage
   end
 end
-hash = YAML.load_file(File.join(profile_path, profile) + ".js")
+hash = YAML.load_file(File.join(PROFILE_PATH, profile) + ".js")
 
 # clear previous file
 target = hash["out"]
